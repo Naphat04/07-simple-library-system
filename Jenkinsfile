@@ -9,7 +9,7 @@ pipeline {
         
         
         // ดึง "กุญแจ" จาก Jenkins Credentials (ชื่อ ID ต้องตรงกัน)
-        VERCEL_PROJECT_NAME = 'devops07-simple-library-system'
+        VERCEL_PROJECT_NAME = 'devops07-quiz1'
         VERCEL_TOKEN = credentials('DevOps07_VERCEL_TOKEN_ID')
     }
 
