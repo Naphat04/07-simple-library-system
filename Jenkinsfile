@@ -41,7 +41,7 @@ pipeline {
             steps {
                 // สั่ง Deploy ไป Vercel
                 sh "vercel link --project $DevOps07_quiz1 --token $DevOps07_VERCEL_TOKEN_ID --yes"
-                sh "npx vercel --token ${VERCEL_TOKEN} --prod --yes"
+                sh "npx vercel --token ${$DevOps07_VERCEL_TOKEN_ID} --prod --yes"
                 echo 'Stage 4: Deploy passed!'
             }
         }
